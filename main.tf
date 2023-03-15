@@ -36,5 +36,6 @@ resource "aws_subnet" "main" {
     tags = {
       "Name" = "public_subnet1"
     }
+    }
   
 }
