@@ -10,3 +10,10 @@ resource "aws_instance" "instance1" {
     
   
 }
+resource "aws_s3_bucket" "bucket1" {
+    bucket = "em9113"
+    tags = {
+      "Name" = "MYbucker"
+    }
+  
+}
