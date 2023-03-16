@@ -38,4 +38,12 @@ resource "aws_subnet" "main2" {
       "Name" = "public_subnet1"
     }
     }
+    variable "vpc-04a281649bc33d9db" {}
+
+data "aws_internet_gateway" "tarrform" {
+  filter {
+    name   = "attachment.vpc-04a281649bc33d9db"
+    values = [var.vpc-04a281649bc33d9db]
+  }
+}
   
